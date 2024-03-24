@@ -14,10 +14,9 @@ public class main {
         while (Arrays.equals(hidden,guessed)==false){
             System.out.println("Введи букву");
             char letter = reader.next().charAt(0);
-            for (int index = 0; index<hiddenWord.length();index++){
-                char letterHiddenWord = hiddenWord.charAt(index);
-                if (letterHiddenWord==letter){
-                    guessed[index] = letterHiddenWord;
+            for (int index = 0; index< hidden.length;index++){
+                if (hidden[index]==letter){
+                    guessed[index] = letter;
                 }
             }
             System.out.println(Arrays.toString(guessed));
